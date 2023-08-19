@@ -12,8 +12,22 @@
 // })
 
 function toClick(){
-const fstInput = document.getElementById('rectangle-input-01');
-const lstInput = document.getElementById('rectangle-input-02');
+const fstInput = getValue('rectangle-input-01');
+const lstInput = getValue('rectangle-input-02');
+
+const area = (fstInput * lstInput);
+
+setValue('rectangle-area', area, 'rectangle-input-01', 'rectangle-input-02');
 
 
+}
+
+//
+function ellipseArea(){
+   const majorRadius = getValue('ellipse-input-area-01');
+   const minorRadius = getValue('ellipse-input-area-02');
+
+   const ellipseArea = Math.PI * majorRadius * minorRadius ;
+
+   setValue('ellipse-area', ellipseArea, 'ellipse-input-area-01', 'ellipse-input-area-02')
 }

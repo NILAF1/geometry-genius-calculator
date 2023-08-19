@@ -43,7 +43,10 @@
               <p class="p-[10px] text=[16px] font-normal text-[#414141]">
                 Area (A) = 0.5 x b x h
               </p>
-              <div class="bg-slate-500 p-2 px-4 rounded-sm min-w-fit text-white font-bold">0.00</div>
+            <div class="flex items-center gap-x-2">
+              <p class="bg-slate-500 p-2 px-4 rounded-sm min-w-fit text-white font-bold">0.00</p>
+              <p>cm<sup>2</sup></p>
+            </div>
               </div>
 
               <div class="flex pt-[22px]">
@@ -74,7 +77,10 @@
                 <p class="p-[10px] text=[16px] font-normal text-[#414141]">
                   Area (A) = w x I
                 </p>
-                <div class="bg-slate-500 p-2 px-4 rounded-sm min-w-fit text-white font-bold">0.00</div>
+                <div class="flex items-center gap-x-2">
+                  <div id="rectangle-area" class="bg-slate-500 p-2 px-4 rounded-sm min-w-fit text-white font-bold">0.00</div>
+                <p>cm<sup>2</sup></p>
+                </div>
               </div>
               
               <div class="flex pt-[22px]">
@@ -195,22 +201,22 @@
               <div class="flex flex-col justify-center items-center">
                 <h2 class="text-[25px] font-bold text-[#414141]">Ellipse</h2>
               <p class="p-[10px] text=[16px] font-normal text-[#414141]">
-                Area (A) =(3.2416) ab
+                Area (A) = π x ab
               </p>
-              <div class="bg-slate-500 p-2 px-4 rounded-sm min-w-fit text-white font-bold">0.00</div>
+              <div id="ellipse-area" class="bg-slate-500 p-2 px-4 rounded-sm min-w-fit text-white font-bold">0.00</div>
 
               </div>
               
               <div class="flex pt-[22px]">
-                <input class="border-gray-500 pl-3 w-[95px] bg-[#F1F1F1] rounded-[4px]" type="" name="" id=""
+                <input class="border-gray-500 pl-3 w-[95px] bg-[#F1F1F1] rounded-[4px]" type="" name="" id="ellipse-input-area-01"
                   placeholder="a" />
                 <p>cm</p>
-                <input class="w-[95px] bg-[#F1F1F1] p-3 h-[32px] rounded-[4px]" type="" name="" id="" placeholder="b" />
+                <input class="w-[95px] bg-[#F1F1F1] p-3 h-[32px] rounded-[4px]" type="" name="" id="ellipse-input-area-02" placeholder="b" />
                 <p>cm</p>
               </div>
             </div>
             <div class="pt-[50px]">
-              <button class="btn btn-primary w-full">Calculate</button>
+              <button onclick="ellipseArea()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
